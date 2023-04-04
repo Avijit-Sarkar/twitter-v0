@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React from "react";
 import SidebarLink from "./SidebarLink";
@@ -10,7 +11,7 @@ import {
   ClipboardDocumentListIcon,
   UserIcon,
   EllipsisHorizontalCircleIcon,
-  DotsHorizontalIcon,
+  EllipsisHorizontalIcon,
 } from "@heroicons/react/24/outline";
 
 function Sidebar() {
@@ -28,6 +29,21 @@ function Sidebar() {
         <SidebarLink text="Lists" Icon={ClipboardDocumentListIcon} />
         <SidebarLink text="Profile" Icon={UserIcon} />
         <SidebarLink text="More" Icon={EllipsisHorizontalCircleIcon} />
+      </div>
+      <button className="hidden xl:inline ml-auto bg-[#1d9bf0] text-white rounded-full w-56 h-[52px] text-lg font-bold shadow-md hover:bg-[#1a8cd8]">
+        Tweet
+      </button>
+      <div className="text-[#d9d9d9] flex items-center justify-center hoverAnimation xl:-mr-5 xl:ml-auto mt-auto">
+        <img
+          className="h-10 w-10 rounded-full xl:mr-2.5"
+          src="/twitter-icon-svg-28.jpg"
+          alt=""
+        />
+        <div className="hidden xl:inline leading-5">
+          <h4 className="font-bold">Avijit</h4>
+          <p className="text-[#6e767d]">@avijit7278</p>
+        </div>
+        <EllipsisHorizontalIcon className="h-5 hidden xl:inline ml-10" />
       </div>
     </div>
   );
