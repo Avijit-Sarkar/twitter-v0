@@ -1,6 +1,17 @@
 import Image from "next/image";
 import React from "react";
 import SidebarLink from "./SidebarLink";
+import { HomeIcon } from "@heroicons/react/24/solid";
+import {
+  HashtagIcon,
+  BellIcon,
+  InboxIcon,
+  BookmarkIcon,
+  ClipboardDocumentListIcon,
+  UserIcon,
+  EllipsisHorizontalCircleIcon,
+  DotsHorizontalIcon,
+} from "@heroicons/react/24/outline";
 
 function Sidebar() {
   return (
@@ -14,9 +25,9 @@ function Sidebar() {
         <SidebarLink text="Notifications" Icon={BellIcon} />
         <SidebarLink text="Messages" Icon={InboxIcon} />
         <SidebarLink text="Bookmarks" Icon={BookmarkIcon} />
-        <SidebarLink text="Lists" Icon={ClipboardListIcon} />
+        <SidebarLink text="Lists" Icon={ClipboardDocumentListIcon} />
         <SidebarLink text="Profile" Icon={UserIcon} />
-        <SidebarLink text="More" Icon={DotsCircleHorizontalIcon} />
+        <SidebarLink text="More" Icon={EllipsisHorizontalCircleIcon} />
       </div>
     </div>
   );
